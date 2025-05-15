@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        function validate(event) {
+           
+            event.preventDefault()
+            
+        
+            if (document.f1.t1.value == "") {
+                alert("Please enter your name.");
+                document.f1.t1.focus();
+                return false;
+            }
+            else if (document.f1.t2.value == "") {
+                alert("Please enter your email.");
+                document.f1.t2.focus();a
+                return false;
+            }
+           
+            else if (document.f1.t3.value == "") {
+                alert("Please enter the message.");
+                document.f1.t3.focus();
+                return false;
+            }
+           
+            else {
+                alert("Recorded successfully!!!");
+                return true;
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .order {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 15px;
+            align-items: flex-start;
+            transition: transform 0.3s ease;
+        }
+
+        .f {
+            width: 24%;
+            text-align: center;
+            padding: 5px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .f img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .order :hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#Menu">Menu</a>
+            <a href="#contact us">contact</a>
+        </nav>
+    </header>
+    
+    <div class="image-container">
+        <img src="fruit.webp" alt="Fruit" class="image">
+        <div class="overlay-text">
+            <h1>"Fresh and Sweet Fruits"</h1>
+        </div><br>
+    </div>
+
+    <h1 style="color: #d8950f; text-align: center;">About Us</h1>
+    <p style="font-family: Arial, sans-serif; font-size: 16px; color: #333; line-height: 1.6;">
+      We’re passionate about delivering the freshest, highest-quality fruits straight to your door. We work with local farmers and trusted suppliers to bring you the best produce, from everyday staples to exotic finds. Our goal is to make healthy living easy and delicious for everyone. Enjoy nature’s bounty with us!
+    </p>
+
+    <div class="a" style="padding: 20px; background-color: #f4f4f4; border-radius: 8px; margin-top: 20px;">
+        <h1 style="color: #d8950f; text-align: center;">Fruits Menu</h1>
+
+        <table border="1" style="width: 100%; border-collapse: collapse; text-align: center;">
+            <tr style="background-color: #d8950f; color: white;">
+                <th>Menu</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+            <tr style="background-color: #ecf0f1;">
+                <td>Apple</td>
+                <td>Rs 150</td>
+                <td>4</td>
+            </tr>
+            <tr style="background-color: #ecf0f1;">
+                <td>Banana</td>
+                <td>Rs 200</td>
+                <td>6</td>
+            </tr>
+            <tr style="background-color: #ecf0f1;">
+                <td>Strawberry</td>
+                <td>Rs 200</td>
+                <td>12</td>
+            </tr>
+            <tr style="background-color: #ecf0f1;">
+                <td>Coconut</td>
+                <td>Rs 50</td>
+                <td>1</td>
+            </tr>
+            <tr style="background-color: #ecf0f1;">
+                <td>Chikoo</td>
+                <td>Rs 100</td>
+                <td>6</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="order">
+        <div class="f">
+            <h2>Apple</h2>
+            <img src="img1.jpg" alt="apple">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="f">
+            <h2>Banana</h2>
+            <img src="img2.jpg" alt="banana">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="f">
+            <h2>Strawberry</h2>
+            <img src="img3.jpg" alt="strawberry">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="f">
+            <h2>Coconut</h2>
+            <img src="img4.jpg" alt="coconut">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="f">
+            <h2>Chikoo</h2>
+            <img src="img5.jpg" alt="chikoo">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="Fruits">
+        <h1>Order</h1><hr>
+
+        <label>Name</label>
+        <input><br><hr>
+
+        <label>Fruit Name</label>
+        <form>
+            <label for="fruit">Choose a fruit:</label>
+            <select id="fruit" name="fruit">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="strawberry">Strawberry</option>
+                <option value="coconut">Coconut</option>
+                <option value="chikoo">Chikoo</option>
+            </select><br><br>
+        </form>
+
+        <label>Quantity</label>
+        <input><br><hr>
+
+        <button type="submit">Submit</button>
+    </div>
+
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us. We're here to help!</p>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> contact@yourwebsite.com</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+            <p><strong>Address:</strong> 123 Main Street, Your City, Your Country</p>
+        </div>
+
+        <div class="contact-form">
+            <h3>Send us a Message</h3>
+            <form name="f1" method="POST" onsubmit="return validate(event)">
+                <label for="name">Your Name</label>
+                <input type="text" name="t1" value="">
+
+                <label for="email">Your Email</label>
+                <input type="text" name="t2" value="">
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="t3" rows="4" required></textarea>
+
+                <button type="submit" name="b1">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
