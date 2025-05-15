@@ -14,7 +14,7 @@
              display: flex;
              justify-content: center;
              align-items: center;
-             height: 100vh;
+             height: 150vh;
          }
          .form-container {
              background-color: #fff;
@@ -26,7 +26,7 @@
          }
          h2 {
              text-align: center;
-             color: #333;
+             color: #161515;
              margin-bottom: 20px;
          }
          .form-group {
@@ -47,7 +47,7 @@
              box-sizing: border-box;
          }
          input[type="submit"] {
-             background-color: #4CAF50;
+             background-color: #b71183;
              color: white;
              padding: 10px;
              border: none;
@@ -70,42 +70,42 @@
  <body>
  
  <div class="form-container">
-     <h2>Register</h2>
-     <form action="login" method="POST">
+    <h2>Registration Form</h2>
+     <form action="Registration" method="POST">
          
          <div class="form-group">
-             <label for="first-name">First Name:</label>
-             <input type="text" id="first-name" name="first_name" required>
+            
+             <input type="text" id="first-name" name="first_name" required placeholder="First Name">
          </div>
  
          
          <div class="form-group">
-             <label for="last-name">Last Name:</label>
-             <input type="text" id="last-name" name="last_name" required>
+             
+             <input type="text" id="last-name" name="last_name" required placeholder="Last Name">
          </div>
  
       
          <div class="form-group">
-             <label for="email">Email Address:</label>
-             <input type="email" id="email" name="email" required>
+             
+             <input type="email" id="email" name="email" required placeholder="Email Id">
          </div>
  
          
          <div class="form-group">
-             <label for="phone">Phone Number:</label>
-             <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="10 digits">
+             
+             <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Phone NO:10 digits">
          </div>
  
      
          <div class="form-group">
-             <label for="password">Password:</label>
-             <input type="password" id="password" name="password" required minlength="8">
+             
+             <input type="password" id="password" name="password" required minlength="8" placeholder="Password">
          </div>
  
         
          <div class="form-group">
-             <label for="confirm-password">Confirm Password:</label>
-             <input type="password" id="confirm-password" name="confirm_password" required minlength="8">
+             
+             <input type="password" id="confirm-password" name="confirm_password" required minlength="8" placeholder="Confirm Password">
          </div>
  
         
