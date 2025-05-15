@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+
+<script type="text/javascript">
+    var a,b,c,d,flag=0;
+function perform(value){
+    if(flag==0){
+        b=parseInt(value);
+        a=f1.t1.value;
+        document.f1.t1.value="";
+        flag=1;
+
+    }
+    else{
+        c=f1.t1.value;
+        document.f1.t1.value="";
+        if(b==1)
+    {
+        d=parseFloat(a)+parseFloat(c);
+        document.f1.t1.value=d;
+    }
+        else if(b==2)
+    {
+        d=parseFloat(a)-parseFloat(c);
+        document.f1.t1.value=d;
+    }
+    else if(b==3)
+    {
+        d=parseFloat(a)*parseFloat(c);
+        document.f1.t1.value=d;
+    }
+    else if(b==4)
+    {
+        d=parseFloat(a)/parseFloat(c);
+        document.f1.t1.value=d;
+    }
+
+
+    }
+
+}
+
+</script>
+</head>
+<body>
+    <form name="f1">
+ <table>  
+    <tr>  
+    <input type="text"  name="t1" value=""/><br>
+</tr> 
+<tr>
+    <td><input type="button" name="b1" value="0" onclick="document.f1.t1.value+='0'"/></td>
+    <td><input type="button" name="b2" value="1" onclick="document.f1.t1.value+='1'"/></td>
+    <td><input type="button" name="b3" value="2" onclick="document.f1.t1.value+='2'"/></td>
+    <td><input type="button" name="b4" value="+" onclick="perform(1)"/></td>
+</tr>  
+<tr>
+    <td><input type="button" name="b5" value="3" onclick="document.f1.t1.value+='3'"/></td>
+    <td><input type="button" name="b6" value="4" onclick="document.f1.t1.value+='4'"/></td>
+    <td><input type="button" name="b7" value="5" onclick="document.f1.t1.value+='5'"/></td>
+    <td><input type="button" name="b8" value="-" onclick="perform(2)"/></td>
+</tr>
+<tr>
+    <td><input type="button" name="b9" value="6"  onclick="document.f1.t1.value+='6'"/></td>
+    <td><input type="button" name="b10" value="7"  onclick="document.f1.t1.value+='7'"/></td>
+    <td><input type="button" name="b11" value="8"  onclick="document.f1.t1.value+='8'"/></td>
+    <td><input type="button" name="b12" value="*" onclick="perform(3)"/></td>
+</tr>
+<tr>
+<td><input type="button" name="b13" value="9" onclick="document.f1.t1.value+='9'"/></td>
+<td><input type="button" name="b14" value="/" onclick="perform(4)"/></td>
+<td><input type="button" name="b15" value="=" onclick="perform(value)"/></td>
+</tr>
+    
+
+</table>  
+</body>
+</html>
